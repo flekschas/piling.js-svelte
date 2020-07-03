@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   import createPiling from './piling-example.js'
 
   let wrapper;
