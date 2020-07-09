@@ -1,7 +1,9 @@
-import createPilingJs, { createImageRenderer } from 'piling.js';
+import createPilingJs, { createImageRenderer } from './piling.js';
 
-const create = async (element) => createPilingJs(element, {
+const create = async (element) =>
+  createPilingJs(element, {
     renderer: createImageRenderer(),
+    // prettier-ignore
     items: [
       { src: 'https://storage.googleapis.com/pilingjs/coco-cars/000000253413.jpg' },
       { src: 'https://storage.googleapis.com/pilingjs/coco-cars/000000533739.jpg' },
