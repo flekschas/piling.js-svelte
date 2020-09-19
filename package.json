@@ -1,28 +1,35 @@
 {
   "name": "piling.js-svelte",
   "version": "0.1.0",
-  "description": "Simple piling.js svelte bundler",
+  "description": "Template for using piling.js in a Svelte app",
+  "keywords": [
+    "piling.js",
+    "svelte",
+    "rollup"
+  ],
   "author": [
     {
       "name": "Fritz Lekschas",
       "url": "https://lekschas.de"
     }
   ],
-  "keywords": [
-    "piling.js",
-    "svelte",
-    "rollup"
-  ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/flekschas/piling.js-svelte.git"
+  },
+  "dependencies": {
+    "piling.js": "~0.7.9",
+    "pixi.js": "~5.1.6",
+    "pub-sub-es": "~1.2.1",
+    "umap-js": "~1.3.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-svelte3": "^2.7.3",
+    "gh-pages": "^3.1.0",
     "npm-run-all": "^4.1.5",
     "page": "^1.11.4",
     "prettier": "^2.0.5",
@@ -43,6 +50,7 @@
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",
     "start:dev": "sirv public --dev",
-    "lint": "eslint src/*"
+    "lint": "eslint src/*",
+    "deploy": "npm run public; touch public/.nojekyll; gh-pages -d public -t --git git"
   }
 }
