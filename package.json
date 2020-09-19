@@ -51,6 +51,6 @@
     "start": "sirv public",
     "start:dev": "sirv public --dev",
     "lint": "eslint src/*",
-    "deploy": "npm run public; touch public/.nojekyll; gh-pages -d public -t --git git"
+    "deploy": "npm run build; touch public/.nojekyll; gh-pages -d public -t --git git"
   }
 }

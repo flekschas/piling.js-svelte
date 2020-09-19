@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
+public/.nojekyll
 public/assets
 public/bundle.*
 package-lock.json
